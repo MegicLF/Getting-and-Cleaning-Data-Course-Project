@@ -1,4 +1,13 @@
-## read the provided dataset in the working directory
+## load the library needed
+library(dplyr)
+
+## dowload the dataset
+filename <- "UCI_HAR_Dataset.zip"
+fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+download.file(fileURL, filename, method="curl")
+unzip(filename) 
+
+## read the dataset
 features <- read.table("UCI HAR Dataset/features.txt", col.names = c("n","functions"))
 activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", col.names = c("code", "activity"))
 subject_test <- read.table("UCI HAR Dataset/test/subject_test.txt", col.names = "subject")
