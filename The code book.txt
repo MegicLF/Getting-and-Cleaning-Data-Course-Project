@@ -5,3 +5,11 @@ The following variables are used in the R script:
 2. x_test, y_test, subject_test: tables from the folder "test"
 3. subject: column name of the subject tables
 4. code: column name of the y tables
+5. merged_data: the table created by merging all tables (x, y, and Subject)
+6. tidy_data: the tidy table created following the step 2
+7. tidy_data2: the required final independent tidy dataset
+
+
+The original merged dataset, merged_data, contains 10299 observations of 563 variables.
+The first tidy dataset, tidy_data, contains 10299 observations of 88 variables.
+The second tidy dataset, tidy_data2, contains 180 observations of 88 variables.
